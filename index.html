@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rojaxmart</title>
+	<style type="text/css">
+		*{
+	padding: 0;
+	margin: 0;
+	
+}
+
+header{
+	width: 100%;
+	height: 65px;
+	background-color:orange;
+	display: flex;
+}
+
+body{
+	background-color: rgb(241,243,246);
+}
+
+.logo{
+	padding-left: 40px;
+	padding-top: 2px;
+}
+
+.logo h1{
+	color: white;
+	text-align: center;
+	font-family: Comic Sans MS	;
+}
+
+.logo h5{
+	color: white;
+	font-family: sans-serif;
+}
+
+.logo h5 span{
+	color: red;
+}
+
+.search{
+	padding-top: 15px;
+	padding-left: 20px;
+	display: flex;
+}
+
+.srch{
+	height: 35px;
+	width: 500px;
+	border: none;
+	background-color: white;
+	padding-left: 10px;
+	font-size: 15px;
+}
+
+.scbtn{
+	width: 30px;
+	height: 35px;
+	border: none;
+	border-left: 1px solid grey;
+	background-color: white;
+	color:orange;
+}
+
+.scbtn img{
+	height: 20px;
+}
+menu ul{
+	color: white;
+	display: flex;
+	padding-left: 50px;
+	padding-top: 20px;
+	padding-right: 10 px;
+	font-size: 20px;
+	padding-right: 30px;
+}
+
+menu ul li{
+	padding-left: 30px;
+	list-style: none;
+}
+
+menu ul li a{
+	text-decoration: none;
+	color: white;
+}
+
+menu ul li a:hover{
+	color: red;
+}
+
+.login{
+	padding-top: 15px;
+	padding-left: 30px;
+}
+
+.lgn{
+	width: 120px;
+	height: 35px;
+	border: none;
+	color:orange;	
+	font-family: sans-serif;
+	font-weight: bolder;
+	font-size: 15px;
+}
+
+.lgn:hover{
+	color:red;	
+}
+
+
+.cntr0{
+	width: 100%;
+	height:120px;
+	background-color: white;	
+
+	
+}
+
+.cntr0 ul{
+	display: flex;
+}
+
+.cntr0 ul li{
+	list-style: none;
+	padding-right: 55px;
+	padding-left: 55px;
+
+}
+
+.cntr0 ul li a
+{
+	text-decoration: none;
+	color: black;
+}
+
+.cntr0 ul li a:hover
+{
+	color: orange;
+}
+
+.cntr0 ul li h5{
+	text-align: center;
+}
+
+.cntr0 ul li img{
+	height: 80px;
+	border-radius: 12px;
+	padding-top: 10px;
+}
+
+
+
+.cntr1{
+	margin-top: 20px;
+	width: 1200px;
+	height:600px;
+	background-color: white;
+	margin-right: 6%;
+	margin-left: 6%;
+}
+
+.cntr1 img{
+	
+	height: 600px;
+}
+
+.cntr2{
+	margin-top: 20px;
+	width: 100%;
+	height:1200px;
+
+}
+
+.r1 ul{
+	display: flex;
+}
+
+.r1 ul li {
+	list-style: none;
+	padding-left:35px;
+	padding-right: 35px;
+	background-color: white;
+	padding-bottom: 10px;
+}
+
+.r1 img{
+	height: 300px;
+	width: 200px;
+}
+
+.r1 p{
+	font-family: sans-serif;
+	font-size: 13px;
+}
+
+.r1 span{
+	font-size: 16px;
+	font-weight: bolder;
+}
+
+.r2 ul{
+	display: flex;
+	margin-top: 15px;
+}
+
+.r2 ul li {
+	list-style: none;
+	padding-left:35px;
+	padding-right: 35px;
+	background-color: white;
+	padding-bottom: 10px;
+}
+
+.r2 img{
+	height: 200px;
+	width: 200px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+.r2 p{
+	font-family: sans-serif;
+	font-size: 13px;
+}
+
+.r2 span{
+	font-size: 16px;
+	font-weight: bolder;
+}
+
+
+
+.r3 ul{
+	display: flex;
+	margin-top: 15px;
+}
+
+.r3 ul li {
+	list-style: none;
+	padding-left:35px;
+	padding-right: 35px;
+	background-color: white;
+	padding-bottom: 10px;
+}
+
+.r3 img{
+	padding-top: 20px;
+	width: 200px;
+	padding-bottom: 20px;
+}
+
+.r3 p{
+	font-family: sans-serif;
+	font-size: 13px;
+}
+
+.r3 span{
+	font-size: 16px;
+	font-weight: bolder;
+}
+
+
+
+
+
+
+		.dropbtn{
+			border: none;
+			background-color: white;
+			font-family: serif;
+			font-weight: bolder;
+			color: black;
+			font-size: 12px;
+			padding-left: 11px;
+			padding-top: -2px;
+		}
+
+
+
+
+		.dropdown{
+			position: relative;
+			display: inline-block;
+		}
+
+		.dropdown .dropbtn:hover{
+			color: black;
+		}
+
+		.ddown{
+			width: 250px;
+			display: none;
+			position: absolute;
+			text-align: left;
+			background-color: white;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;	
+			padding: 10px;
+
+		}
+
+		.ddown a{
+			display: block;
+		}
+
+		.ddown a:hover{
+			background-color: white;
+		}
+
+		.dropdown:hover .ddown{
+			display: block;
+		}
+
+
+
+.cropbtn{
+			border: none;
+			background-color: white;
+			font-family: serif;
+			color: black;
+			font-size: 14px;
+			
+		}
+
+
+
+
+		.cropdown{
+			position: relative;
+			display: inline-block;
+		}
+
+		.cropdown .cropbtn:hover{
+			color: orange;
+		}
+
+		.cdown{
+			width: 250px;
+			display: none;
+			position: absolute;
+			text-align: left;
+			background-color: white;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;	
+			padding: 10px;
+
+		}
+
+		.cdown a{
+			display: block;
+		}
+
+		.cdown a:hover{
+			background-color: white;
+		}
+
+		.cropdown:hover .cdown{
+			display: block;
+		}
+
+.cntr2 li a{
+	text-decoration: none;
+	color: black;
+}
+
+footer{
+	width: 100%;
+	height: 200px;
+	background-color: #ff7b00;
+	color: white;
+
+}
+
+.lf{
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-bottom: 10px;
+}
+
+.lf ul{
+	display: flex;
+
+}
+
+.lf li{
+	list-style: none;
+	width: 300px;
+	padding-right: 10px;
+}
+
+.lf li a{
+	text-decoration: none;
+	color: white;
+}
+
+.rf{
+	text-align: center;
+	padding-top: 10px;
+	border-top: 1px solid white;
+}
+
+
+
+	</style>
+</head>
+<body>
+	<form>
+	<header>
+		<div class="logo">
+			<h1>Rojaxmart</h1>
+			<h5>Explore Your <span>Dream</span> Products</h5>
+		</div>
+		<div class="search">
+			<input type="search" name="srch" class="srch" placeholder="Search for products">
+			<button type="search" class="scbtn"><img src="logo/search.svg"></button>
+		</div>
+		<menu>
+			<ul>
+				<li><a href="#">Cart</a></li>
+				<li><a href="#">My Order</a></li>
+				<li><a href="#">Contact us</a></li>
+			</ul>
+		</menu>
+
+		<div class="login">
+			<button class="lgn">LOGIN</button>
+		</div>
+
+	</header>
+	<div class="content">
+		<div class="cntr0">
+			<ul>
+				<li><a href="#"><img src="logo/clothing.png"><h5>Fashion</h5></a></li>
+				<li><a href="#">
+						<div class="dropdown"> 
+						<img src="logo/electronic.png">
+						<button class="dropbtn">Electronic</button>
+						<div class="ddown">
+							<a href="#">Headphone</a>
+							<a href="#">Smart Watch</a>
+							<a href="#">Camera Accessories</a>
+							<a href="#">Computer Access</a>
+							<a href="#">
+								<div class="cropdown"> 
+								<button class="cropbtn">Mobile</button>
+									<div class="cdown">
+										<a href="#">Apple</a>
+										<a href="#">Samsung</a>
+										<a href="#">Redmi</a>
+										<a href="#">One plus</a>
+										<a href="#">Realme</a>
+										<a href="#">Oppo</a>
+									</div>
+								</div>
+							</a>
+							<a href="#">Storage</a>
+							<a href="#">Office Supply</a>
+						</div>
+					</div>
+					</a>
+				</li>
+				<li><a href="#"><img src="logo/Footwear.png"><h5>Footwear</h5></a></li>
+				<li><a href="#"><img src="logo/furniture.png"><h5>Furniture</h5></a></li>
+				<li><a href="#"><img src="logo/Mobiles.png"><h5>Mobile</h5></a></li>
+				<li><a href="#"><img src="logo/Beauty_and_Makeup.png"><h5>Beauty</h5></a></li>
+				<li><a href="#"><img src="logo/Kitchen.png"><h5>Kitchen</h5></a></li>
+			</ul>
+		</div>
+		<div class="cntr1">
+			<img src="cntr/POCO-M4.png">
+		</div>
+		<div class="cntr2">
+		 <div class="r1">
+		 	<ul>
+		 		<li><a href="#">
+		 			<img src="beauty/soap1.png">
+		 			<p>Fiama Gel Bar Celebration Pack With 5 unique Gel Bars & Skin Conditioners</p>
+		 			<p><span>₹260.00</span> (₹208/100g)</p>
+		 		</a></li>
+		 		<li><a href="#">
+		 			<img src="beauty/soap2.png">
+		 			<p>Cinthol Original Soap, 100g (Pack of 8) </p>
+		 			<p><span>₹336.00</span> (₹42/100g)</p>
+		 		</a></li>
+		 		<li><a href="#">
+		 			<img src="beauty/soap4.png">
+		 			<p>Vivel Aloe Vera Bathing Soap with Vitamin E for Soft, Glowing</p>
+		 			<p><span>₹280.00</span> (₹46.67/100g)</p>
+		 		</a></li>
+		 		<li><a href="#">
+		 			<img src="beauty/bodywash.png">
+		 			<p>Plum BodyLovin' Hawaiian Rumba Shower Gel</p>
+		 			<p><span>₹256.00</span> (₹106.67/100ml)</p>
+		 		</a></li>
+		 		<li><a href="#">
+		 			<img src="beauty/bodywash2.png">
+		 			<p>Pears Pure & Gentle Shower Gel, Body Wash with Oil Clear Formula</p>
+		 			<p><span>₹212.00</span> (₹28.27/100ml)</p>
+		 		</a></li>
+		 	</ul>
+		 	<div class="r2">
+		 	<ul>
+		 		<li><a href="#">
+		 			<img src="electronics/boatearpiece.png">
+		 			<p>boAt Airdopes 141 Bluetooth Truly Wireless in Ear Headphones with mic, 42H Playtime, Beast Mode(Low Latency Upto 80ms) for Gaming, ENx Tech, ASAP Charge, IWP, IPX4 Water Resistance (Bold Black)</p>
+		 			<p><span>₹1199.00</span></p>
+		 		</a></li>
+		 		<li><a href="#">
+		 			<img src="electronics/canoncamera.png">
+		 			<p>Canon EOS 1500D 24.1 Digital SLR Camera (Black) with EF S18-55 is II Lens</p>		 			
+		 			<p><span>₹37,999.00</span></p>
+
+		 		</a></li>
+		 		<li><a href="#">
+		 			<img src="electronics/hplaptop.png">
+		 			<p>HP 15s, 11th Gen Intel Core i5-1155G7, 15.6 inch(39.6cm) FHD Anti-Glare Laptop(8GB RAM/512 GB SSD/Intel Iris Xe Graphics/Win 11/Dual Speakers/Backlit KeyboardAlexa Built</p>
+		 			<p><span>₹52,999.00</span></p>
+
+		 		</a></li>
+		 		<li><a href="#">
+		 			<img src="electronics/keyboard.png">
+		 			<p>Logitech MK270r Wireless Combo Keyboard</p>
+		 			<p><span>₹1099.00</span></p>
+		 		</a></li>
+		 		<li><a href="#">
+		 			<img src="electronics/mixer.png">
+		 			<p>Preethi Zodiac MG-218 mixer grinder, 750 watt, Black/Light Grey, 5 jars - 3 In 1 insta fresh juicer Jar & Master chef food processor Jar, Vega W5 motor with 5yr Warranty & Lifelong Free Service</p>
+		 			<p><span>₹8099.00</span></p>
+		 		</a></li>
+		 	</ul>
+		 	</div>
+		 	<div class="r3">
+		 	<ul>
+		 		<li><a href="#">
+		 			<img src="electronics/iphone13.png">
+		 			<p>APPLE iPhone 14 Pro Max (Space Black, 128 GB)</p>
+		 			<p><span>₹1,27,999.00</span></p>
+		 		</a></li>
+		 			
+		 		<li><a href="#">
+		 			<img src="electronics/oneplus.png">
+		 			<p>OnePlus Nord CE 2 Lite 5G (Black Dusk, 128 GB)</p>
+		 			<p><span>₹18,999.00</span></p>
+		 		</a></li>
+		 		<li><a href="#">
+		 			<img src="electronics/iphone141.png">
+		 			<p>APPLE iPhone 13 (Midnight, 128 GB)</p>
+		 			<p><span>₹58,999.00</span></p>
+		 		</a></li>
+		 	
+		 		<li><a href="#">
+		 			<img src="electronics/oneplus1.png">
+		 			<p>OnePlus Nord CE 3 Lite 5G (Pastel Lime, 8GB RAM, 128GB Storage)</p>
+		 			<p><span>₹19,999.00</span></p>
+		 		</a></li>
+		 		<li><a href="#">
+		 			<img src="electronics/iphone14.png">
+		 			<p>APPLE iPhone 14 (Blue, 128 GB)</p>
+		 			<p><span>₹69,999.00</span></p>
+
+		 		</a></li>
+		 	</ul>
+		 	</div>
+		 </div>				
+		</div>
+	</div>
+	<footer>
+		<div class="lf">
+			<ul>
+				<li><a href="#"> ABOUT</a></li>
+				<li><a href="#"> HELP</a></li>
+				<li><a href="#"> CONSUMER POLICY</a></li>
+				<li><a href="#"> SOCIAL</a></li>
+			</ul>
+			<ul>
+				<li><a href="#"> Contact Us</a></li>
+				<li><a href="#"> Payments</a></li>
+				<li><a href="#"> Return Policy</a></li>
+				<li><a href="#"> Facebook</a></li>
+			</ul>
+			<ul>
+				<li><a href="#"> About Us</a></li>
+				<li><a href="#"> Shipping</a></li>
+				<li><a href="#"> Terms Of Use</a></li>
+				<li><a href="#"> Twitter</a></li>
+			</ul>
+			<ul>
+				<li><a href="#"> Careers</a></li>
+				<li><a href="#"> Cancellation & Returns</a></li>
+				<li><a href="#"> Security</a></li>
+				<li><a href="#"> YouTube</a></li>
+			</ul>
+			<ul>
+				<li><a href="#"> Press</a></li>
+				<li><a href="#"> FAQ</a></li>
+				<li><a href="#"> Privacy</a></li>
+			</ul>
+			<ul>
+				<li><a href="#"> Corporate Information</a></li>
+				<li><a href="#"> Report Infringement</a></li>
+				<li><a href="#"> Sitemap</a></li>
+			</ul>
+			<ul>
+				<li><a href="#"> </a></li>
+				<li><a href="#"> </a></li>
+				<li><a href="#"> Grievance Redressal</a></li>
+			</ul>
+		</div>
+		<div class="rf">
+			<h4>&#169 2023-AbhilashBebarta</h4>
+		</div>
+		
+	</footer>
+</form>
+</body>
+</html>
